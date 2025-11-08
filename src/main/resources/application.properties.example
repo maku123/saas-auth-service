@@ -1,0 +1,26 @@
+###
+#
+# This is an example configuration file.
+#
+# 1. Copy this file to "application.properties"
+#
+# 2. Fill in your real secrets in that new file.
+#
+###
+
+spring.application.name=saas-auth-service
+
+# Dropbox App Credentials
+dropbox.client-id=YOUR_CLIENT_ID_HERE
+dropbox.client-secret=YOUR_CLIENT_SECRET_HERE
+dropbox.redirect-uri=http://localhost:8080/auth/callback
+dropbox.scopes=team_info.read members.read events.read
+
+# H2 Database Config
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:h2:mem:saasdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
