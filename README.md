@@ -14,6 +14,7 @@ The initial implementation provides a full, end-to-end authentication flow for *
 - [Data Flow](#data-flow)
   - [Flow 1: Authorization (Saving the Token)](#flow-1-authorization-saving-the-token)
   - [Flow 2: Getting Data (Reusing the Token)](#flow-2-getting-data-reusing-the-token)
+- [Tech Stack](#tech-stack)
 - [How to Run](#how-to-run)
   - [1. Prerequisites](#1-prerequisites)
   - [2. Clone the Repo](#2-clone-the-repo)
@@ -129,6 +130,17 @@ This is the reusable flow for all future API calls.
 8. `DropboxClient` → Returns the `[USER_LIST_JSON]` to `DataService`.  
 9. `DataService` → Returns the `[USER_LIST_JSON]` to `ApiController`.  
 10. `ApiController` → Sends the raw JSON data to the user's browser.  
+
+---
+
+## Tech Stack
+
+* **Java 21 (LTS)**
+* **Spring Boot 3.5.7**
+* **Spring Web:** For RESTful controllers and `RestTemplate`.
+* **Spring Data JPA:** For easy, powerful database interaction.
+* **H2 Database:** As an in-memory SQL database.
+* **Maven:** For dependency management.
 
 ---
 
