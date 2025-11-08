@@ -6,6 +6,25 @@ This project demonstrates 4-layer architecture to solve a common backend challen
 The initial implementation provides a full, end-to-end authentication flow for **Dropbox Business** and exposes reusable API endpoints for fetching data.
 
 ---
+## Table of Contents
+
+- [Key Features](#key-features)
+- [Architecture Deep Dive](#architecture-deep-dive)
+  - [Layer Responsibilities](#layer-responsibilities)
+- [Data Flow](#data-flow)
+  - [Flow 1: Authorization (Saving the Token)](#flow-1-authorization-saving-the-token)
+  - [Flow 2: Getting Data (Reusing the Token)](#flow-2-getting-data-reusing-the-token)
+- [How to Run](#how-to-run)
+  - [1. Prerequisites](#1-prerequisites)
+  - [2. Clone the Repo](#2-clone-the-repo)
+  - [3. Configure Secrets (CRITICAL)](#3-configure-secrets-critical)
+  - [4. Run the Application](#4-run-the-application)
+- [API Endpoints & Usage](#api-endpoints--usage)
+  - [Step 1: Authorize (One-Time Setup)](#step-1-authorize-one-time-setup)
+  - [Step 2: Call the API Endpoints](#step-2-call-the-api-endpoints)
+  - [Step 3: View the Database (Optional)](#optional-step-3-view-the-database)
+
+ ---
 
 ## Key Features
 
