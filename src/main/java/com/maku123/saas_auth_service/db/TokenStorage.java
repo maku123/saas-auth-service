@@ -1,8 +1,8 @@
 package com.maku123.saas_auth_service.db;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Lob;
 
 @Entity
 public class TokenStorage {
@@ -10,10 +10,10 @@ public class TokenStorage {
     @Id // This is the Primary Key
     private String serviceName; // e.g., "dropbox"
 
-    @Column(length = 1024)
+    @Lob
     private String accessToken;
 
-    @Column(length = 1024)
+    @Lob
     private String refreshToken;
 
     // Constructors
